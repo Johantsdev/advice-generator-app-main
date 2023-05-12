@@ -1,7 +1,14 @@
 import ReactDOM from "react-dom/client";
+import Attribution from "./components/Attribution";
+import Card from "./components/Card";
 
 const App = () => {
-  return <h1>Hello world</h1>;
+  return (
+    <div>
+      <Card />
+      <Attribution />
+    </div>
+  );
 };
 
 const container = document.getElementById("root");
