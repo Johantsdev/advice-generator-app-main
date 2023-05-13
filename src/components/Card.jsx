@@ -27,9 +27,12 @@ const Card = () => {
         ADVICE <span>#{id}</span>
       </h1>
       <p>"{advice}"</p>
-      <img src="../images/pattern-divider-mobile.svg" alt="pattern divider" />
+      <img
+        src={require("../images/pattern-divider-mobile.svg")}
+        alt="pattern divider"
+      />
       <button>
-        <img src="../images/icon-dice.svg" alt="icon dice" />
+        <img src={require("../images/icon-dice.svg")} alt="icon dice" />
       </button>
     </div>
   );

@@ -1,0 +1,12 @@
+@use '../abstracts/index' as *;
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: $ff-main, sans-serif;
+    font-size: $fs-body;
+    height: 100vh;
+}
+
