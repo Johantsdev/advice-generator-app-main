@@ -6,7 +6,7 @@ const Card = () => {
 
   useEffect(() => {
     requestAdvice();
-  });
+  }, []);
 
   async function requestAdvice() {
     const res = await fetch("https://api.adviceslip.com/advice");
@@ -26,12 +26,13 @@ const Card = () => {
       <h1>
         ADVICE <span>#{id}</span>
       </h1>
-      <p>"{advice}"</p>
-      <img
-        src={require("../images/pattern-divider-mobile.svg")}
-        alt="pattern divider"
-      />
-      <button>
+      <p className="advice">"{advice}"</p>
+      <div className="pattern"></div>
+      <button
+        onClick={() => {
+          requestAdvice();
+        }}
+      >
         <img src={require("../images/icon-dice.svg")} alt="icon dice" />
       </button>
     </div>
