@@ -27,7 +27,12 @@ const Card = () => {
         ADVICE <span>#{id}</span>
       </h1>
       <p className="advice">"{advice}"</p>
-      <div className="pattern"></div>
+      <div className="pattern">
+        <div className="ligne"></div>
+        <div className="block"></div>
+        <div className="block"></div>
+        <div className="ligne"></div>
+      </div>
       <button
         onClick={() => {
           requestAdvice();
