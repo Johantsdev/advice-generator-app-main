@@ -26,7 +26,7 @@ const Card = () => {
       <h1>
         ADVICE <span>#{id}</span>
       </h1>
-      <p className="advice">"{advice}"</p>
+      <p className="advice">{advice === "" ? <h1>Wait</h1> : `"${advice}"`}</p>
       <div className="pattern">
         <div className="ligne"></div>
         <div className="block"></div>
